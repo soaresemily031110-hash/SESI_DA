@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<title>Inscrição - Fofocas Duovizinhense</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+/* CABEÇALHO COLORIDO */
+header{
+    background: linear-gradient(90deg, hotpink, gold, deepskyblue, blueviolet);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* FORMULÁRIO */
+form{
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* CAIXAS */
+fieldset{
+    background: white;
+    border: 2px solid blueviolet;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* TÍTULOS DAS SEÇÕES */
+legend{
+    font-weight: bold;
+    color: blueviolet;
+}
+
+/* LABELS */
+label{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: deepskyblue;
+}
+
+/* CAMPOS */
+input, select, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* CHECKBOX E RADIO */
+input[type="checkbox"],
+input[type="radio"]{
+    width: auto;
+}
+
+/* BOTÃO */
+button{
+    background: linear-gradient(90deg, hotpink, gold, deepskyblue, blueviolet);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+/* FOCO DOS CAMPOS */
+input:focus, select:focus, textarea:focus{
+    outline: none;
+    border: 2px solid hotpink;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Sistema de Inscrição</h1>
+    <p><em>Evento Fofocas Duovizinhense</em></p>
+</header>
+
+<form>
+
+<!-- DADOS PESSOAIS -->
+<fieldset>
+<legend>Dados Pessoais</legend>
+
+<label>Nome</label>
+<input type="text">
+
+<label>Sobrenome</label>
+<input type="text">
+
+<label>CPF</label>
+<input type="text">
+
+<label>RG</label>
+<input type="text">
+
+<label>Data de nascimento</label>
+<input type="date">
+
+<label>E-mail</label>
+<input type="email">
+
+<label>Telefone</label>
+<input type="tel">
+
+</fieldset>
+
+<!-- DADOS PROFISSIONAIS -->
+<fieldset>
+<legend>Dados Profissionais</legend>
+
+<label>Empresa</label>
+<input type="text">
+
+<label>Cargo</label>
+<input type="text">
+
+<label>Área de atuação</label>
+<select>
+    <option>Comunicação</option>
+    <option>Jornalismo</option>
+    <option>Marketing</option>
+    <option>Tecnologia</option>
+</select>
+
+</fieldset>
+
+<!-- PARTICIPAÇÃO -->
+<fieldset>
+<legend>Participação</legend>
+
+<label>Dias do evento</label>
+<input type="checkbox"> Dia 1
+<input type="checkbox"> Dia 2
+<input type="checkbox"> Dia 3
+
+<br><br>
+
+<label>Trilhas de interesse</label>
+<input type="radio" name="trilha"> Notícias
+<input type="radio" name="trilha"> Tecnologia
+<input type="radio" name="trilha"> Comunicação
+
+<label>Alimentação especial</label>
+<textarea></textarea>
+
+<label>Upload de arquivo</label>
+<input type="file">
+
+<label>Site pessoal</label>
+<input type="url">
+
+<label>Senha</label>
+<input type="password">
+
+<label>Cor favorita</label>
+<input type="color">
+
+<label>Nível de satisfação</label>
+<input type="range" min="0" max="10">
+
+<label>Número de acompanhantes</label>
+<input type="number">
+
+</fieldset>
+
+<button type="submit">Enviar Inscrição</button>
+
+</form>
+
+</body>
+</html>
