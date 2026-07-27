@@ -1,0 +1,130 @@
+/* CONFIGURAÇÃO GLOBAL */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial,  sans-serif;
+}
+
+/* CONTAINER PRINCIPAL */
+.container-principal {
+    display: flex;     
+    width: 100%;         
+    height: 100vh;      
+}
+
+/* LADO ESQUERDO */
+.lado-esquerdo {
+    width: 45%; 
+    padding: 20px;       
+    background-image: url("imagens/pug.png");    
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    
+   
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px; 
+}
+
+.oi {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+}
+
+/* LADO DIREITO */
+.lado-direito {
+    width: 55%; 
+    background-color: #ffffff; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* TÍTULO PRINCIPAL */
+.lado-direito h2 {
+    font-size: 2.2rem;
+    max-width: 550px; 
+    margin-bottom: 50px;
+    color: #000000;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* BLOCO DOS BOTÕES SOCIAIS */
+.botoes-login {
+    width: 100%;
+    max-width: 340px; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.btn-social {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555555; 
+    border-radius: 30px;
+    background-color: #ffffff;
+    font-size: 0.95rem;
+    color: #333333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: background 0.2s;
+}
+
+.btn-social:hover {
+    background-color: #f9f9f9;
+}
+
+/* PADRONIZAÇÃO DOS ÍCONES */
+.btn-icone {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* TEXTO DE AJUDA */
+.ajuda-texto {
+    font-size: 0.8rem;
+    color: #555555;
+    margin-bottom: 80px; 
+    text-align: center;
+}
+
+.ajuda-texto a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.ajuda-texto a:hover {
+    text-decoration: underline;
+}
+
+/* BOTÃO DE AÇÃO PRINCIPAL (VAMOS LÁ) */
+.btn-prosseguir {
+    width: 100%;
+    max-width: 340px;
+    padding: 16px;
+    background-color: #1a1a1a; 
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-prosseguir:hover {
+    background-color: #000000;
+}
