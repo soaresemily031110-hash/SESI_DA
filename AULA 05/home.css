@@ -36,4 +36,18 @@ header p{
     border-radius: 50px;
     font-size: 30px;
     padding-left: 30px;
+
+}
+.grupo-cards{
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    height: 284px;
+    width: 219px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 34px;
 }
