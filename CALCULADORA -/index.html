@@ -1,0 +1,48 @@
+<html>
+
+<body>
+
+<h1>Calculadora</h1>
+
+<input id="conta">
+
+<br><br>
+
+<button onclick="document.getElementById('conta').value += '1'">1</button>
+<button onclick="document.getElementById('conta').value += '2'">2</button>
+<button onclick="document.getElementById('conta').value += '3'">3</button>
+<button onclick="document.getElementById('conta').value += '+'">+</button>
+
+<br>
+
+<button onclick="document.getElementById('conta').value += '4'">4</button>
+<button onclick="document.getElementById('conta').value += '5'">5</button>
+<button onclick="document.getElementById('conta').value += '6'">6</button>
+<button onclick="document.getElementById('conta').value += '-'">-</button>
+
+<br>
+
+<button onclick="document.getElementById('conta').value += '7'">7</button>
+<button onclick="document.getElementById('conta').value += '8'">8</button>
+<button onclick="document.getElementById('conta').value += '9'">9</button>
+<button onclick="document.getElementById('conta').value += '*'">*</button>
+
+<br>
+
+<button onclick="document.getElementById('conta').value += '0'">0</button>
+<button onclick="document.getElementById('conta').value += '.'">.</button>
+<button onclick="calcular()">=</button>
+<button onclick="document.getElementById('conta').value = ''">C</button>
+
+<script>
+
+function calcular() {
+    document.getElementById('conta').value =
+    eval(document.getElementById('conta').value);
+}
+
+</script>
+
+</body>
+
+</html>
