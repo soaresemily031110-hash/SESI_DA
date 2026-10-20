@@ -1,5 +1,6 @@
 const express = require("express");
 const { Pool } = require("pg");
+const cors = require('cors');
 
 const pool = process.env.DATABASE_URL
   ? new Pool({
@@ -10,11 +11,11 @@ const pool = process.env.DATABASE_URL
       host: "localhost",
       port: 5432,
       user: "postgres",
-      password: "caio1201",
+      password: "admin",
       database: "tomatrix",
     });
 
-// Estufas fixas do sistema.
+// Estufas fixas do 'sistema'.
 // "cultura" liga a estufa às faixas ideais do script.js (não mude esse código).
 // "nome" é o texto que aparece no painel e pode ser alterado à vontade.
 const ESTUFAS = [
@@ -61,8 +62,14 @@ async function criarTabelas() {
 criarTabelas().catch((erro) => console.error("Erro ao criar tabelas:", erro));
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
+const path = require("path");
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
+});
 
 // Lista só as estufas fixas, com as leituras de cada uma
 app.get("/api/canteiros", async (req, res) => {
